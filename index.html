@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>harmes-agent — App Information &amp; Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0; padding: 2rem 1.25rem; line-height: 1.6;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #fafafa; color: #1a1a1a;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { background: #141414; color: #e8e8e8; }
+    .card { background: #1e1e1e !important; border-color: #333 !important; }
+    code { background: #2a2a2a !important; }
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  h1 { font-size: 1.5rem; margin: 0 0 0.25rem; }
+  .sub { opacity: 0.65; margin: 0 0 2rem; }
+  .card {
+    background: #fff; border: 1px solid #e2e2e2; border-radius: 10px;
+    padding: 1.1rem 1.4rem; margin-bottom: 1.1rem;
+  }
+  h2 { font-size: 1.02rem; margin: 0 0 0.5rem; }
+  ul { margin: 0.4rem 0; padding-left: 1.3rem; }
+  li { margin: 0.3rem 0; }
+  code {
+    background: #f0f0f0; border-radius: 4px; padding: 0.1rem 0.35rem;
+    font-size: 0.88em; word-break: break-all;
+  }
+  footer { margin-top: 2.5rem; opacity: 0.65; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>harmes-agent</h1>
+  <p class="sub">App information &amp; privacy policy · personal, single-user application</p>
+
+  <div class="card">
+    <h2>What this app is</h2>
+    <p>A private, personal-use assistant operated by <strong>Hashir Sheikh</strong>.
+    It connects to the owner's own Google Calendar so the assistant can read the
+    owner's schedule and create or update events — helping plan their day and
+    work routine. It is not a public service and has no other users.</p>
+  </div>
+
+  <div class="card">
+    <h2>What it accesses</h2>
+    <ul>
+      <li>Google Calendar only — scope
+        <code>https://www.googleapis.com/auth/calendar</code></li>
+      <li>Nothing else. The app never requests Gmail, Drive, Contacts, Photos,
+        or any other Google service.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>How your data is handled</h2>
+    <ul>
+      <li>Calendar data is processed <strong>locally on the owner's own
+        computer</strong>, inside Docker containers.</li>
+      <li>No data is sold, shared with, or sent to any third party. No analytics,
+        no advertising, no tracking.</li>
+      <li>OAuth tokens are stored only on the owner's machine and never leave it
+        except when talking directly to Google's API.</li>
+      <li>Events themselves remain in Google Calendar; the app stores no separate
+        copy beyond local operation logs.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Revoking access</h2>
+    <p>Access can be revoked at any time from
+      <a href="https://myaccount.google.com/permissions">Google Account → Security →
+      Third-party apps with account access</a>, which immediately invalidates the
+      app's tokens.</p>
+  </div>
+
+  <footer>
+    Questions? Contact <strong>hasheersheikh@gmail.com</strong> ·
+    Last updated: September 2026
+  </footer>
+</main>
+</body>
+</html>
