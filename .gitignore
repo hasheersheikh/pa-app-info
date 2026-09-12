@@ -1,1 +1,4 @@
 ops.html
+docker-compose.yml
+README.md
+sync-secrets-to-bitwarden.sh
